@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Custom</title>
+
+    <style>
+    
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (min-width: 300px) {
+            .container {
+                max-width: 600px;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .nav-grid-blue {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .nav-grid-orange {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .nav-grid-green {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .nav-grid-red {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .grid-item {
+                width: 100%;
+                float: left;
+                border-top: 20px solid #ffffff;
+                border-right: 20px solid #ffffff;
+                border-left: 20px solid #ffffff;
+            }
+
+            .blue {
+                background-color: cornflowerblue;
+                padding: 20px;
+            }
+
+            .orange {
+                background-color: rgb(255, 153, 0);
+                padding: 60px;
+            }
+
+            .green {
+                background-color: rgb(28, 236, 0);
+                padding: 20px;
+            }
+
+            .red {
+                background-color: rgb(233, 0, 0);
+                padding: 30px;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .container {
+                max-width: 1024px;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .nav-grid-blue {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .nav-grid-orange {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .nav-grid-green {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .nav-grid-red {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+
+            .grid-item {
+                width: 100%;
+                float: left;
+                border-top: 20px solid #ffffff;
+                border-right: 20px solid #ffffff;
+                border-left: 20px solid #ffffff;
+            }
+
+            .blue {
+                background-color: cornflowerblue;
+                padding: 20px;
+            }
+
+            .orange {
+                background-color: rgb(255, 153, 0);
+                padding: 80px;
+            }
+
+            .green {
+                background-color: rgb(28, 236, 0);
+                padding: 20px;
+            }
+
+            .red {
+                background-color: rgb(233, 0, 0);
+                padding: 50px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .container {
+                max-width: 1920px;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .nav-grid-blue {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+
+            .nav-grid-orange {
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            .nav-grid-green {
+                display: grid;
+                grid-template-columns: 33.33% 33.33% 33.33%;
+            }
+
+            .nav-grid-red {
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+            }
+
+            .grid-item {
+                width: 100%;
+                float: left;
+                border-top: 20px solid #ffffff;
+                border-right: 20px solid #ffffff;
+                border-left: 20px solid #ffffff;
+            }
+
+            .blue {
+                background-color: cornflowerblue;
+                padding: 20px;
+            }
+
+            .orange {
+                background-color: rgb(255, 153, 0);
+                padding: 100px;
+            }
+
+            .green {
+                background-color: rgb(28, 236, 0);
+                padding: 80px;
+            }
+
+            .red {
+                background-color: rgb(233, 0, 0);
+                padding: 70px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="nav-grid-blue">
+            <!-- grid blue -->
+            <div class="grid-item blue"></div>
+            <div class="grid-item blue"></div>
+        </div>
+        <div class="nav-grid-orange">
+            <!-- grid orange -->
+            <div class="grid-item orange"></div>
+        </div>
+        <div class="nav-grid-green">
+            <!-- grid green -->
+            <div class="grid-item green"></div>
+            <div class="grid-item green"></div>
+            <div class="grid-item green"></div>
+        </div>
+        <div class="nav-grid-red">
+            <!-- grid red -->
+            <div class="grid-item red"></div>
+            <div class="grid-item red"></div>
+            <div class="grid-item red"></div>
+            <div class="grid-item red"></div>
+        </div>
+    </div>
+
+</body>
+</html>
