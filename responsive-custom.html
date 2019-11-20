@@ -7,23 +7,23 @@
     <title>Responsive Custom</title>
 
     <style>
-    
+        /* รีเซ็ตค่า html */
         * {
             padding: 0;
             margin: 0;
-            box-sizing: border-box;
+            box-sizing: border-box; /* กำหนดความกว้างให้เท่ากับหน้าจอ */
         }
-
+        /* Device Mobile */
         @media screen and (min-width: 300px) {
             .container {
-                max-width: 600px;
-                width: 100%;
-                padding: 20px;
+                max-width: 600px; /* ความกว้างมากที่ของหน้าจอ mobile */
+                /* width: 100%; */
+                padding: 20px; /* กำหนดระยะห่างระหว่าง border กับ content */
             }
-
+            /* กำหนด element มาครอบเพื่อใช้เเบ่ง grid-column */
             .nav-grid-blue {
-                display: grid;
-                grid-template-columns: 100%;
+                display: grid; /* เลือกรูปแบบการเเสดงเป็น grid */
+                grid-template-columns: 100%; /* กำหนด column ที่จะใช้ใน grid ให้เต็มจอ*/
             }
 
             .nav-grid-orange {
@@ -42,16 +42,17 @@
             }
 
             .grid-item {
-                width: 100%;
-                float: left;
+                width: 100%; /* กำหนดความกว้างให้เต็มช่อง */
+                float: left; /* ดัน grid-item ให้ชิดซ้าย */
+                /* กำหนดขนาดของเส้นขอบ บนขวา ซ้าย */
                 border-top: 20px solid #ffffff;
-                border-right: 20px solid #ffffff;
-                border-left: 20px solid #ffffff;
+                border-right: 20px solid #ffffff;     
+                border-left: 20px solid #ffffff;     
             }
 
             .blue {
-                background-color: cornflowerblue;
-                padding: 20px;
+                background-color: cornflowerblue; /* กำหนดสีให้กับ grid-item ที่ใช้สีนี้ */
+                padding: 20px; /* กำหนดขนาดของ grid-item */
             }
 
             .orange {
@@ -69,11 +70,11 @@
                 padding: 30px;
             }
         }
-
+        /* Device Tablet */
         @media screen and (min-width: 600px) {
             .container {
                 max-width: 1024px;
-                width: 100%;
+                /* width: 100%; */
                 padding: 20px;
             }
 
@@ -129,7 +130,7 @@
         @media screen and (min-width: 1024px) {
             .container {
                 max-width: 1920px;
-                width: 100%;
+                /* width: 100%; */
                 padding: 20px;
             }
 
